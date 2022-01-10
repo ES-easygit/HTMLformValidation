@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML5 Form Validation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form>
+    <label>One Aphabet Valid :</label>
+<input type="text" pattern="[a-zA-Z]" title="Please enter only one  alphabet" required>
+<br> <br>
+<label>Only Albhabets Valid:</label>
+<input type="text" pattern="^[a-zA-Z]*$" title="Please enter only alphabets" required>
+
+<br> <br>
+<label>Only Albhabets & Whitespaces Valid:</label>
+<input type="text" pattern="^[a-zA-Z ]*$" title="Please enter only alphabets and whitespaces" required>
+
+<br> <br>
+<label>One Number Valid:</label>
+<input type="text" pattern="[0-9]" title="Please enter only one  number" required>
+
+<br> <br>
+<label>Only Numbers Valid:</label>
+<input type="text" pattern="^[0-9]*$" title="Please enter only numbers" required>
+
+<br> <br>
+<label>Only Numbers & Whitespaces Valid:</label>
+<input type="text" pattern="^[0-9 ]*$" title="Please enter only numbers & whitespaces" required>
+
+<br> <br>
+<label>Only Albhabets, Numbers  & Whitespaces Valid:</label>
+<input type="text" pattern="^[a-zA-Z0-9 ]*$" title="Please enter only alphabets, numbers and whitespaces" required>
+
+
+<br> <br>
+<label>Allow Numbers Between 6 to 10 characters long:</label>
+<input type="text" pattern="[0-9]{6,10}" title="Please enter numbers between 6 to 10 characters" required>
+
+
+<br> <br>
+<label>Allow Alphabets Between 6 to 10 characters long:</label>
+<input type="text" pattern="[a-zA-Z]{6,10}" title="Please enter alphabets between 6 to 10 characters" required>
+
+
+<br> <br>
+<label>Allow Alphabets & Numbers Between 6 to 10 characters long:</label>
+<input type="text" pattern="[a-zA-Z0-9]{6,10}" title="Please enter alphabets and numbers between 6 to 10 characters" required>
+
+<br> <br>
+<input type="submit" value="SUBMIT">
+   </form>
+</body>
+</html>
